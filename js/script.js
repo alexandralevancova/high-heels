@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             quote.classList.remove("visible");
             quote.classList.add("hidden");
-        }, 4000);
+        }, 5000);
     }, 1000);
 });
 
@@ -137,28 +137,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("resize", checkScreenSize);
   checkScreenSize();
-
-  var video = document.getElementById('background-video');
-
-  var video = document.getElementById('background-video');
-
-  if (window.innerWidth <= 768) {
-    video.setAttribute('playsinline', 'true');  
-    video.setAttribute('muted', 'true');  
-  } else {
-    video.removeAttribute('muted'); 
-    video.removeAttribute('playsinline'); 
-  }
-  
-  window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
-      video.setAttribute('playsinline', 'true');
-      video.setAttribute('muted', 'true');
-    } else {
-      video.removeAttribute('muted');
-      video.removeAttribute('playsinline');
-    }
-  });
-  
 
 });
